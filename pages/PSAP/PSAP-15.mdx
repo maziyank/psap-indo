@@ -1,11 +1,20 @@
 # PERISTIWA SETELAH TANGGAL PELAPORAN 
 
-> Paragraf-paragraf yang ditulis dengan huruf tebal dan miring adalah paragraf standar, yang harus dibaca dalam konteks paragraf-paragraf penjelasan yang ditulis dengan huruf biasa dan Kerangka Konseptual Akuntansi Pemerintahan PENDAHULUAN 
+import { Callout } from 'nextra/components'
+import Bolder from "./../components/bolder"
+import BolderBtn from "./../components/bolder-btn"
+
+<Callout type="info">
+  Paragraf-paragraf yang ditulis dengan huruf tebal dan miring adalah paragraf standar, yang harus dibaca dalam konteks paragraf-paragraf penjelasan yang ditulis dengan huruf biasa dan Kerangka Konseptual Akuntansi Pemerintahan. <BolderBtn/> 
+</Callout>
+
+
+## PENDAHULUAN 
 
 ### Tujuan 
 
 1. Tujuan pernyataan ini adalah untuk menentukan: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Bilamana entitas menyesuaikan laporan keuangannya atas peristiwa setelah tanggal pelaporan; dan </li>
 <li>Pengungkapan yang dibuat entitas tentang tanggal laporan keuangan diotorisasi untuk terbit dan peristiwa setelah tanggal pelaporan. </li>
 </ol>
@@ -18,11 +27,12 @@
 
 ## DEFINISI 
 
-5. Berikut ini adalah istilah yang digunakan dalam Pernyataan Standar dengan pengertian: Peristiwa setelah tanggal pelaporan adalah peristiwa, baik yang menguntung-kan maupun yang tidak menguntungkan, yang terjadi di antara tanggal pelaporan dan tanggal laporan keuangan diotorisasi untuk terbit. Peristiwa tersebut dapat dibagi menjadi dua jenis, yaitu: 
-<ol class="custom-list">
-<li>Peristiwa yang memberikan bukti adanya kondisi pada tanggal pelaporan (merupakan peristiwa penyesuai setelah tanggal pelaporan); dan </li>
-<li>Peristiwa yang mengindikasikan timbulnya kondisi setelah tanggal pelaporan (merupakan peristiwa nonpenyesuai setelah tanggal pelaporan).</li>
-</ol>
+5. Berikut ini adalah istilah yang digunakan dalam Pernyataan Standar dengan pengertian: 
+    - `Peristiwa setelah tanggal pelaporan` adalah peristiwa, baik yang menguntung-kan maupun yang tidak menguntungkan, yang terjadi di antara tanggal pelaporan dan tanggal laporan keuangan diotorisasi untuk terbit. Peristiwa tersebut dapat dibagi menjadi dua jenis, yaitu: 
+    <ol className="custom-list">
+    <li>Peristiwa yang memberikan bukti adanya kondisi pada tanggal pelaporan (merupakan peristiwa penyesuai setelah tanggal pelaporan); dan </li>
+    <li>Peristiwa yang mengindikasikan timbulnya kondisi setelah tanggal pelaporan (merupakan peristiwa nonpenyesuai setelah tanggal pelaporan).</li>
+    </ol>
 
 ## OTORISASI PENERBITAN LAPORAN KEUANGAN 
 
@@ -32,7 +42,7 @@
 
 ## PENGAKUAN DAN PENGUKURAN 
 
-1. Dalam periode antara tanggal pelaporan dan tanggal laporan keuangan diotorisasi untuk terbit, pemerintah mungkin mengumumkan kebijakan yang dapat berdampak pada penyajian/pengungkapan pos-pos dalam laporan keuangan. Sejauh mana peristiwa akibat kebijakan pemerintah berdampak pada penyesuaian laporan keuangan tergantung pada 
+8. Dalam periode antara tanggal pelaporan dan tanggal laporan keuangan diotorisasi untuk terbit, pemerintah mungkin mengumumkan kebijakan yang dapat berdampak pada penyajian/pengungkapan pos-pos dalam laporan keuangan. Sejauh mana peristiwa akibat kebijakan pemerintah berdampak pada penyesuaian laporan keuangan tergantung pada 
 
 <ol>
 <li>apakah kejadian/peristiwa tersebut memberikan informasi yang cukup tentang kondisi terkini pada tanggal pelaporan dan </li>
@@ -43,13 +53,26 @@
 
 9. Entitas menyesuaikan jumlah yang disajikan dalam laporan keuangan karena adanya peristiwa penyesuai setelah tanggal pelaporan. 
 
-10. Berikut ini beberapa contoh peristiwa penyesuai setelah tanggal pelaporan yang memerlukan penyesuaian angka-angka laporan keuangan, atau untuk mengakui peristiwa yang belum disajikan sebelumnya, antara lain: a) Penyelesaian atas putusan pengadilan yang telah bersifat final dan memiliki kekuatan hukum tetap setelah tanggal pelaporan yang memutuskan bahwa entitas memiliki kewajiban kini pada tanggal pelaporan. Entitas menyesuaikan nilai kewajiban yang terkait dengan penyelesaian putusan pengadilan tersebut setelah tidak ada upaya lainnya. b) Informasi yang diterima setelah tanggal pelaporan yang mengindikasikan adanya penurunan nilai piutang pada tanggal pelaporan, misalnya informasi daluwarsa pajak (kedaluwarsanya hak untuk melakukan penagihan pajak, termasuk bunga, denda, kenaikan, dan biaya penagihan pajak) dan kepailitan debitor yang terjadi setelah tanggal pelaporan keuangan yang mengindikasikan kemungkinan piutang tidak dapat ditagih, sehingga perlu disesuaikan. c) Ditetapkannya jumlah pendapatan berdasarkan informasi yang diperoleh dari entitas lain yang berwenang pada periode pelaporan setelah tanggal pelaporan. d) Ditemukannya kecurangan atau kesalahan yang mengakibatkan salah saji laporan keuangan. e) Pengesahan yang dilakukan oleh unit yang mempunyai fungsi perbendaharaan umum terhadap transaksi belanja dan/atau pendapatan yang terjadi sebelum tanggal pelaporan. f) Hasil pemeriksaan BPK yang terbit setelah tanggal pelaporan keuangan atas perhitungan subsidi yang seharusnya diakui pemerintah.
+10. Berikut ini beberapa contoh peristiwa penyesuai setelah tanggal pelaporan yang memerlukan penyesuaian angka-angka laporan keuangan, atau untuk mengakui peristiwa yang belum disajikan sebelumnya, antara lain: 
+
+<ol className="custom-list">
+<li> Penyelesaian atas putusan pengadilan yang telah bersifat final dan memiliki kekuatan hukum tetap setelah tanggal pelaporan yang memutuskan bahwa entitas memiliki kewajiban kini pada tanggal pelaporan. Entitas menyesuaikan nilai kewajiban yang terkait dengan penyelesaian putusan pengadilan tersebut setelah tidak ada upaya lainnya. </li>
+<li> Informasi yang diterima setelah tanggal pelaporan yang mengindikasikan adanya penurunan nilai piutang pada tanggal pelaporan, misalnya informasi daluwarsa pajak (kedaluwarsanya hak untuk melakukan penagihan pajak, termasuk bunga, denda, kenaikan, dan biaya penagihan pajak dan kepailitan debitor yang terjadi setelah tanggal pelaporan keuangan yang mengindikasikan kemungkinan piutang tidak dapat ditagih, sehingga perlu disesuaikan. </li>
+<li> Ditetapkannya jumlah pendapatan berdasarkan informasi yang diperoleh dari entitas lain yang berwenang pada periode pelaporan setelah tanggal pelaporan. </li>
+<li> Ditemukannya kecurangan atau kesalahan yang mengakibatkan salah saji laporan keuangan.</li> 
+<li> Pengesahan yang dilakukan oleh unit yang mempunyai fungsi perbendaharaan umum terhadap transaksi belanja dan/atau pendapatan yang terjadi sebelum tanggal pelaporan. </li>
+<li> Hasil pemeriksaan BPK yang terbit setelah tanggal pelaporan keuangan atas perhitungan subsidi yang seharusnya diakui pemerintah.</li>
+</ol>
 
 ## PERISTIWA NONPENYESUAI SETELAH TANGGAL PELAPORAN 
 
 11. Entitas tidak menyesuaikan jumlah yang disajikan dalam laporan keuangan karena adanya peristiwa nonpenyesuai setelah tanggal pelaporan. 
 
-12. Contoh dari peristiwa nonpenyesuai setelah tanggal pelaporan di antaranya: a) Adanya kebijakan penyajian kembali nilai aset dengan menggunakan nilai wajar secara teratur yang menyebabkan menurunnya nilai aset diantara tanggal pelaporan dan tanggal laporan keuangan diotorisasi untuk terbit. Penurunan nilai tersebut tidak berhubungan dengan kondisi aset pada tanggal laporan keuangan namun akan menggambarkan keadaan yang terjadi pada periode berikutnya. b) Pengumuman pembagian dividen yang dilakukan oleh Badan Usaha Milik Negara/Daerah setelah tanggal pelaporan.
+12. Contoh dari peristiwa nonpenyesuai setelah tanggal pelaporan di antaranya: 
+<ol className="custom-list">
+<li> Adanya kebijakan penyajian kembali nilai aset dengan menggunakan nilai wajar secara teratur yang menyebabkan menurunnya nilai aset diantara tanggal pelaporan dan tanggal laporan keuangan diotorisasi untuk terbit. Penurunan nilai tersebut tidak berhubungan dengan kondisi aset pada tanggal laporan keuangan namun akan menggambarkan keadaan yang terjadi pada periode berikutnya.</li>
+<li> Pengumuman pembagian dividen yang dilakukan oleh Badan Usaha Milik Negara/Daerah setelah tanggal pelaporan.</li>
+</ol>
 
 ## KESINAMBUNGAN ENTITAS 
 
@@ -60,7 +83,7 @@
 15. Ketika asumsi kesinambungan entitas tidak lagi terpenuhi, perlu juga untuk mempertimbangkan apakah perubahan kondisi tersebut mengarah pada munculnya kewajiban tambahan atau memicu klausul dalam kontrak utang yang mengarah pada reklasifikasi utang jangka Panjang menjadi utang jangka pendek. 
 
 16. PSAP 01 mensyaratkan adanya suatu pengungkapan apabila: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Laporan keuangan tidak disusun atas dasar kesinambungan entitas. </li>
 
 <li> PSAP 01 mensyaratkan bahwa pada saat laporan keuangan tidak disusun atas dasar kesinambungan entitas, hal tersebut harus diungkapkan, bersama dengan dasar penyusunan laporan keuangan yang digunakan dan alasan mengapa entitas dianggap tidak berkesinambungan; atau </li>
@@ -82,13 +105,13 @@
 20. Dalam beberapa kasus, entitas pelaporan perlu memutakhirkan pengungkapan laporan keuangannya untuk mencerminkan informasi yang diterima setelah tanggal pelaporan, walaupun informasi tersebut tidak mempengaruhi jumlah yang disajikan dalam laporan keuangannya. Salah satu contoh perlunya pemutakhiran pengungkapan adalah ketika bukti tentang kewajiban kontinjensi yang ada pada tanggal pelaporan baru tersedia setelah akhir tanggal pelaporan. Pengungkapan Peristiwa Nonpenyesuai Setelah Tanggal Pelaporan 
 
 21. Apabila peristiwa nonpenyesuai setelah tanggal pelaporan memiliki nilai yang material, tidak adanya pengungkapan dapat mempengaruhi pengambilan keputusan pengguna laporan. Karena itu, entitas mengungkapkan informasi untuk setiap hal yang material dari peristiwa nonpenyesuai setelah tanggal pelaporan, yang mencakup: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Sifat peristiwa; dan </li>
 <li>Estimasi atas dampak keuangan, atau pernyataan bahwa estimasi tersebut tidak dapat dibuat. </li>
 </ol>
 
 22. Berikut adalah contoh peristiwa nonpenyesuai setelah tanggal pelaporan yang umumnya diungkapkan dalam laporan keuangan: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Pengumuman untuk tidak melanjutkan suatu program atau kegiatan pemerintah, pelepasan aset serta penyelesaian kewajiban terkait dengan penghentian program atau kegiatan pemerintah; </li>
 <li>Pembelian atau pelepasan aset dalam jumlah yang signifikan; </li>
 <li>Kerusakan aset akibat kebakaran setelah tanggal pelaporan; </li>

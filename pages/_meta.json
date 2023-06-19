@@ -1,4 +1,9 @@
 {
     "index": "Beranda",
-    "kerangka": "Kerangka Konseptual"
+    "kerangka": "Kerangka Konseptual",
+    "github_link": {
+        "title": "PSAP-Indo",
+        "href": "https://github.com/maziyank/psap-indo",
+        "newWindow": true
+      }
 }

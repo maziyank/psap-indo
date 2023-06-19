@@ -1,19 +1,27 @@
 # AKUNTANSI ASET TAK BERWUJUD 
 
-> Paragraf-paragraf yang ditulis dengan huruf tebal dan miring adalah paragraf standar, yang harus dibaca dalam konteks paragraf-paragraf penjelasan yang ditulis dengan huruf biasa dan Kerangka Konseptual Akuntansi Pemerintahan.
+import { Callout } from 'nextra/components'
+import Bolder from "./../components/bolder"
+import BolderBtn from "./../components/bolder-btn"
+
+<Callout type="info">
+  Paragraf-paragraf yang ditulis dengan huruf tebal dan miring adalah paragraf standar, yang harus dibaca dalam konteks paragraf-paragraf penjelasan yang ditulis dengan huruf biasa dan Kerangka Konseptual Akuntansi Pemerintahan. <BolderBtn/> 
+</Callout>
 
 ## PENDAHULUAN 
 
 ### Tujuan 
 
-1. Tujuan Pernyataan Standar ini adalah untuk mengatur perlakuan akuntansi untuk aset tak berwujud meliputi pengakuan, pengukuran, penyajian, dan pengungkapan. Ruang Lingkup 
+1. Tujuan Pernyataan Standar ini adalah untuk mengatur perlakuan akuntansi untuk aset tak berwujud meliputi pengakuan, pengukuran, penyajian, dan pengungkapan. 
+
+### Ruang Lingkup 
 
 2. Pernyataan Standar ini mengatur pengakuan, pengukuran, penyajian, dan pengungkapan aset tak berwujud dalam laporan keuangan untuk tujuan umum. 
 
 3. Pernyataan Standar ini berlaku untuk entitas pelaporan dalam menyusun laporan keuangan pemerintah pusat, laporan keuangan pemerintah daerah, laporan keuangan Badan Layanan Umum (BLU), dan laporan keuangan konsolidasian. 
 
 4. Pernyataan Standar ini tidak mengatur: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Kewenangan untuk memberikan perizinan oleh instansi pemerintah; </li>
 <li>Kewenangan untuk menarik pungutan perpajakan oleh intansi pemerintah; </li>
 <li>Aset tak berwujud yang dimiliki untuk dijual oleh entitas dalam rangka operasi normal (diakui sebagai persediaan); </li>
@@ -25,22 +33,29 @@
 
 ## DEFINISI 
 
-5. Berikut ini adalah pengertian istilah-istilah yang digunakan dalam Pernyataan Standar ini: Aset Tak Berwujud (ATB) adalah aset nonkeuangan yang dapat diidentifikasi dan tidak mempunyai wujud fisik serta dimiliki untuk digunakan dalam menghasilkan barang atau jasa atau digunakan untuk tujuan lainnya termasuk hak atas kekayaan intelektual. Amortisasi adalah alokasi harga perolehan ATB secara sistematis dan rasional selama masa manfaatnya. Masa Manfaat adalah: 
-<ol class="custom-list">
-<li>periode suatu aset yang diharapkan untuk aktivitas pemerintahan dan/atau pelayanan publik; atau </li>
-<li>jumlah produksi atau unit serupa yang diharapkan diperoleh dari aset untuk aktivitas pemerintahan dan/atau pelayanan publik, yang dibatasi oleh ketentuan hukum, peraturan, atau kontrak. Nilai tercatat (carrying amount) Aset Tak Berwujud adalah nilai buku Aset Tak Berwujud, yang dihitung dari biaya perolehan suatu aset setelah dikurangi akumulasi amortisasi. Riset adalah penelitian orisinal dan terencana yang dilaksanakan dengan harapan memperoleh pembaruan pengetahuan dan pemahaman teknis atas ilmu yang baru. Pengembangan adalah penerapan temuan riset atau pengetahuan lainnya pada suatu rencana atau rancangan produksi bahan baku, alat, produk, proses, sistem, atau jasa yang sifatnya baru atau yang mengalami perbaikan substansial, sebelum dimulainya produksi komersial atau pemakaian. Lisensi adalah izin tertulis yang diberikan oleh Pemegang Hak Cipta atau Pemilik Hak Terkait kepada pihak lain untuk melaksanakan hak ekonomi atas Ciptaannya atau produk Hak Terkait dengan syarat tertentu. Waralaba (franchise) adalah hak khusus yang dimiliki oleh orang perseorangan atau badan usaha terhadap sistem bisnis dengan ciri khas usaha dalam rangka memasarkan barang dan/atau jasa yang telah terbukti berhasil dan dapat dimanfaatkan dan/atau digunakan oleh pihak lain berdasarkan perjanjian waralaba. Hak Cipta adalah hak eksklusif pencipta yang timbul secara otomatis berdasarkan prinsip deklaratif setelah suatu ciptaan diwujudkan dalam bentuk nyata tanpamengurangi pembatasan sesuai dengan ketentuan peraturan perundang-undangan. Hak Paten adalah hak eksklusif yang diberikan oleh negara kepada inventor atas hasil invensinya di bidang teknologi untuk jangka waktu tertentu melaksanakan sendiri invensi tersebut atau memberikan persetujuan kepada pihak lain untuk melaksanakannya.</li>
-</ol>
+5. Berikut ini adalah pengertian istilah-istilah yang digunakan dalam Pernyataan Standar ini: 
+    - `Aset Tak Berwujud (ATB)` adalah aset nonkeuangan yang dapat diidentifikasi dan tidak mempunyai wujud fisik serta dimiliki untuk digunakan dalam menghasilkan barang atau jasa atau digunakan untuk tujuan lainnya termasuk hak atas kekayaan intelektual. 
+    - `Amortisasi` adalah alokasi harga perolehan ATB secara sistematis dan rasional selama masa manfaatnya. 
+    - `Masa Manfaat` adalah: 
+    <ol className="custom-list">
+    <li>periode suatu aset yang diharapkan untuk aktivitas pemerintahan dan/atau pelayanan publik; atau </li>
+    <li>jumlah produksi atau unit serupa yang diharapkan diperoleh dari aset untuk aktivitas pemerintahan dan/atau pelayanan publik, yang dibatasi oleh ketentuan hukum, peraturan, atau kontrak. Nilai tercatat (_carrying amount_) Aset Tak Berwujud adalah nilai buku Aset Tak Berwujud, yang dihitung dari biaya perolehan suatu aset setelah dikurangi akumulasi amortisasi. </li>
+    </ol>
+    - `Riset` adalah penelitian orisinal dan terencana yang dilaksanakan dengan harapan memperoleh pembaruan pengetahuan dan pemahaman teknis atas ilmu yang baru. 
+    - `Pengembangan` adalah penerapan temuan riset atau pengetahuan lainnya pada suatu rencana atau rancangan produksi bahan baku, alat, produk, proses, sistem, atau jasa yang sifatnya baru atau yang mengalami perbaikan substansial, sebelum dimulainya produksi komersial atau pemakaian. 
+    - `Lisensi` adalah izin tertulis yang diberikan oleh Pemegang Hak Cipta atau Pemilik Hak Terkait kepada pihak lain untuk melaksanakan hak ekonomi atas Ciptaannya atau produk Hak Terkait dengan syarat tertentu. 
+    - `Waralaba (franchise)` adalah hak khusus yang dimiliki oleh orang perseorangan atau badan usaha terhadap sistem bisnis dengan ciri khas usaha dalam rangka memasarkan barang dan/atau jasa yang telah terbukti berhasil dan dapat dimanfaatkan dan/atau digunakan oleh pihak lain berdasarkan perjanjian waralaba. 
+    - `Hak Cipta` adalah hak eksklusif pencipta yang timbul secara otomatis berdasarkan prinsip deklaratif setelah suatu ciptaan diwujudkan dalam bentuk nyata tanpamengurangi pembatasan sesuai dengan ketentuan peraturan perundang-undangan. 
+    - `Hak Paten` adalah hak eksklusif yang diberikan oleh negara kepada inventor atas hasil invensinya di bidang teknologi untuk jangka waktu tertentu melaksanakan sendiri invensi tersebut atau memberikan persetujuan kepada pihak lain untuk melaksanakannya.
 
 ## JENIS-JENIS ASET TAK BERWUJUD 
 
-6.
-
-## ATB yang dimiliki dan/atau dikuasai pemerintah dapat dibedakan berdasarkan jenis sumber daya, cara perolehan, dan masa manfaat. 
+6.  ATB yang dimiliki dan/atau dikuasai pemerintah dapat dibedakan berdasarkan jenis sumber daya, cara perolehan, dan masa manfaat. 
 
 7. Berdasarkan jenis sumber daya, ATB dapat berupa: 
-<ol class="custom-list">
-<li>Perangkat lunak (software) komputer, yang dapat disimpan dalam berbagai media penyimpanan seperti flash disk, compact disk, disket, pita, dan media penyimpanan lainnya. Perangkat lunak (software) komputer yang masuk dalam kategori ATB adalah perangkat lunak (software) yang bukan merupakan bagian tak terpisahkan dari hardware komputer tertentu. </li>
-<li>Lisensi dan Waralaba (franchise); </li>
+<ol className="custom-list">
+<li>Perangkat lunak (_software_) komputer, yang dapat disimpan dalam berbagai media penyimpanan seperti flash disk, compact disk, disket, pita, dan media penyimpanan lainnya. Perangkat lunak (_software_) komputer yang masuk dalam kategori ATB adalah perangkat lunak (_software_) yang bukan merupakan bagian tak terpisahkan dari _hardware_ komputer tertentu. </li>
+<li>Lisensi dan Waralaba (_franchise_); </li>
 <li>Hak Paten dan Hak Cipta; </li>
 <li>Hasil kajian/pengembangan yang memberikan manfaat jangka panjang; </li>
 <li>ATB yang mempunyai nilai sejarah/budaya; </li>
@@ -48,25 +63,25 @@
 </ol>
 
 8. Berdasarkan cara perolehan, ATB dapat berasal dari: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Pembelian; </li>
 <li>Pengembangan secara internal; </li>
 <li>Pertukaran; </li>
 <li>Kerjasama; </li>
 <li>Donasi/hibah; </li>
-<li>Warisan Budaya/Sejarah (intangible heritage assets); </li>
+<li>Warisan Budaya/Sejarah (_intangible heritage assets_); </li>
 </ol>
 
 9. Berdasarkan masa manfaat, ATB dapat dibedakan menjadi: 
-<ol class="custom-list">
-<li>ATB dengan umur manfaat terbatas (finite life); </li>
-<li>ATB dengan umur manfaat yang tak terbatas (indefinite life).</li>
+<ol className="custom-list">
+<li>ATB dengan umur manfaat terbatas (_finite life_); </li>
+<li>ATB dengan umur manfaat yang tak terbatas (_indefinite life_).</li>
 </ol>
 
 ## PENGAKUAN 
 
 10. Aset Tak Berwujud diakui jika: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Dapat diidentifikasi; </li>
 <li>Dikendalikan, dikuasai, atau dimiliki entitas; </li>
 <li>Kemungkinan besar manfaat ekonomi dan sosial atau jasa potensial di masa mendatang mengalir kepada/dinikmati oleh entitas; dan </li>
@@ -76,14 +91,14 @@
 ## KETERIDENTIFIKASIAN 
 
 11. Aset tak berwujud dapat diidentifikasi apabila: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Dapat dipisahkan, artinya aset ini memungkinkan untuk dipisahkan atau dibedakan secara jelas dari aset-aset yang lain pada suatu entitas.; atau </li>
 <li>Timbul dari kesepakatan yang mengikat, seperti hak kontraktual atau hak hukum lainnya, tanpa memperhatikan apakah hak tersebut dapat dipindahtangankan atau dipisahkan dari entitas atau dari hak dan kewajiban lainnya. </li>
 </ol>
 
 12. Kriteria dapat dipisahkan harus digunakan secara hati-hati, mengingat dalam perolehan aset pada suatu entitas kadang-kadang terjadi perolehan secara gabungan. Dalam hal ATB diperoleh bersama dengan sekelompok aset lainnya, transaksi ini dapat juga meliputi pengalihan hak hukum yang memungkinkan entitas untuk memperoleh manfaat masa depan dari hak tersebut. Dalam hal demikian, entitas tetap harus mengidentifikasi adanya ATB tersebut. Beberapa ATB biasanya dapat dipisahkan dengan aset lainnya, seperti paten, hak cipta, merk dagang, dan franchise. 
 
-13. Sebagai ilustrasi, suatu entitas membeli perangkat keras (hardware), perangkat lunak (software), dan modul untuk kegiatan tertentu. Sepanjang perangkat lunak (software) tersebut dapat dipisahkan dari hardware terkait dan memberikan manfaat masa depan, maka perangkat lunak (software) tersebut diidentifikasi sebagai ATB. Sebaliknya, dalam hal perangkat lunak (software) komputer ternyata tidak dapat dipisahkan dari hardware, misal, tanpa adanya perangkat lunak (software) tersebut hardware tidak dapat beroperasi, maka perangkat lunak (software) tersebut tidak dapat diperlakukan sebagai ATB tetapi sebagai bagian tak terpisahkan dari hardware dan diakui sebagai bagian dari peralatan dan mesin. Namun, jika perangkat lunak (software) tersebut dapat dipisahkan dari hardware, dapat diakui sebagai ATB. Misalnya perangkat lunak (software) dapat dipasang di beberapa hardware dan hardware tetap dapat dijalankan tanpa tergantung pada perangkat lunak (software) tersebut, maka perangkat lunak (software) diakui sebagai ATB.
+13. Sebagai ilustrasi, suatu entitas membeli perangkat keras (_hardware_), perangkat lunak (_software_), dan modul untuk kegiatan tertentu. Sepanjang perangkat lunak (_software_) tersebut dapat dipisahkan dari _hardware_ terkait dan memberikan manfaat masa depan, maka perangkat lunak (_software_) tersebut diidentifikasi sebagai ATB. Sebaliknya, dalam hal perangkat lunak (_software_) komputer ternyata tidak dapat dipisahkan dari _hardware_, misal, tanpa adanya perangkat lunak (_software_) tersebut _hardware_ tidak dapat beroperasi, maka perangkat lunak (_software_) tersebut tidak dapat diperlakukan sebagai ATB tetapi sebagai bagian tak terpisahkan dari _hardware_ dan diakui sebagai bagian dari peralatan dan mesin. Namun, jika perangkat lunak (_software_) tersebut dapat dipisahkan dari _hardware_, dapat diakui sebagai ATB. Misalnya perangkat lunak (_software_) dapat dipasang di beberapa _hardware_ dan _hardware_ tetap dapat dijalankan tanpa tergantung pada perangkat lunak (_software_) tersebut, maka perangkat lunak (_software_) diakui sebagai ATB.
 
 ## PENGENDALIAN 
 
@@ -91,14 +106,14 @@
 
 ## MANFAAT EKONOMI DAN SOSIAL MASA DEPAN 
 
-15. Karakteristik aset secara umum adalah kemampuannya untuk memberikan manfaat ekonomis dan jasa potensial (potential services) di masa depan. Manfaat ekonomis dapat menghasilkan aliran masuk atas kas, setara kas, barang, atau jasa ke pemerintah. Jasa yang melekat pada aset dapat saja memberikan manfaat kepada pemerintah dalam bentuk selain kas atau barang, yaitu manfaat sosial misalnya dalam meningkatkan pelayanan publik sebagai salah satu tujuan utama pemerintah atau peningkatan efisiensi pelaksanaan suatu kegiatan pemerintah. 
+15. Karakteristik aset secara umum adalah kemampuannya untuk memberikan manfaat ekonomis dan jasa potensial (_potential services_) di masa depan. Manfaat ekonomis dapat menghasilkan aliran masuk atas kas, setara kas, barang, atau jasa ke pemerintah. Jasa yang melekat pada aset dapat saja memberikan manfaat kepada pemerintah dalam bentuk selain kas atau barang, yaitu manfaat sosial misalnya dalam meningkatkan pelayanan publik sebagai salah satu tujuan utama pemerintah atau peningkatan efisiensi pelaksanaan suatu kegiatan pemerintah. 
 
 16. Manfaat ekonomi masa depan yang dihasilkan oleh ATB dapat berupa pendapatan yang diperoleh dari penjualan barang atau jasa, penghematan biaya atau efisiensi, dan hasil lainnya seperti pendapatan dari penyewaan, pemberian lisensi, atau manfaat lainnya yang diperoleh dari pemanfaatan ATB. Manfaat sosial dapat berupa peningkatan kualitas layanan atau keluaran, proses pelayanan yang lebih cepat, atau penurunan jumlah tenaga/sumber daya yang diperlukan untuk melaksanakan suatu tugas dan fungsi.
 
 ## PENGAKUAN ASET TAK BERWUJUD YANG DIPEROLEH SECARA INTERNAL 
 
 17. Untuk menentukan apakah perolehan internal ATB memenuhi kriteria untuk pengakuan, perolehan ATB dikelompokkan dalam 2 tahap, yaitu: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Tahap penelitian/riset; dan </li>
 <li>Tahap pengembangan. </li>
 </ol>
@@ -108,17 +123,15 @@
 19. Dalam tahap penelitian/riset dari kegiatan/aktivitas internal, pemerintah tidak/belum dapat membuktikan bahwa ATB telah ada dan akan menghasilkan manfaat ekonomi masa datang. Oleh karenanya, pengeluaran ini diakui sebagai beban pada saat terjadi. 
 
 20. Contoh-contoh dari kegiatan penelitian/riset adalah: 
-<ol class="custom-list">
-<li>Kegiatan/aktivitas yang bertujuan untuk memperoleh pengetahuan baru (new knowledge); </li>
+<ol className="custom-list">
+<li>Kegiatan/aktivitas yang bertujuan untuk memperoleh pengetahuan baru (_new knowledge_); </li>
 <li>Pencarian, evaluasi dan seleksi akhir untuk penerapan atas penemuan penelitian atau pengetahuan lainnya; </li>
 <li>Pencarian alternatif bahan baku, peralatan, produk, proses, sistem ataupun layanan; </li>
 <li>Formula/rumus, rancangan, evaluasi dan seleksi akhir atas alternatif yang tersedia untuk peningkatan material, peralatan, produk, proses, sistem dan layanan yang baru atau yang diperbaiki. </li>
 </ol>
 
-21.
-
-## ATB yang timbul dari pengembangan (atau dari tahapan pengembangan satu kegiatan internal) harus diakui jika pemerintah dapat memperlihatkan seluruh kondisi di bawah ini, yaitu adanya: 
-<ol class="custom-list">
+21. ATB yang timbul dari pengembangan (atau dari tahapan pengembangan satu kegiatan internal) harus diakui jika pemerintah dapat memperlihatkan seluruh kondisi di bawah ini, yaitu adanya: 
+<ol className="custom-list">
 <li>Kelayakan teknis atas penyelesaian ATB sehingga dapat tersedia untuk digunakan atau dimanfaatkan; </li>
 <li>Keinginan untuk menyelesaikan dan menggunakan atau memanfaatkan ATB tersebut; </li>
 <li>Kemampuan untuk menggunakan dan memanfaatkan ATB tersebut; </li>
@@ -127,12 +140,12 @@
 <li>Kemampuan untuk mengukur secara memadai pengeluaran-pengeluaran yang diatribusikan ke ATB selama masa pengembangan. </li>
 </ol>
 
-22. Dalam tahap pengembangan atas aktivitas/kegiatan internal, dalam beberapa kasus, kemungkinan dapat diidentifikasikan adanya ATB dan menunjukkan bahwa aset tersebut akan menghasilkan manfaat ekonomi di masa depan. Hal ini dikarenakan tahap pengembangan atas suatu aktivitas/kegiatan merupakan kelanjutan (further advance) atas tahap penelitian/riset. Namun apakah hasil pengembangan tersebut nantinya akan menjadi ATB atau tidak, harus terlebih dahulu memenuhi kriteria ATB. 
+22. Dalam tahap pengembangan atas aktivitas/kegiatan internal, dalam beberapa kasus, kemungkinan dapat diidentifikasikan adanya ATB dan menunjukkan bahwa aset tersebut akan menghasilkan manfaat ekonomi di masa depan. Hal ini dikarenakan tahap pengembangan atas suatu aktivitas/kegiatan merupakan kelanjutan (_further advance_) atas tahap penelitian/riset. Namun apakah hasil pengembangan tersebut nantinya akan menjadi ATB atau tidak, harus terlebih dahulu memenuhi kriteria ATB. 
 
 23. Pengeluaran-pengeluaran untuk kegiatan/aktivitas pengembangan dikapitalisasi sebagai ATB. 
 
 24. Contoh aktivitas-aktivitas pada tahap pengembangan adalah: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Desain, konstruksi dan percobaan sebelum proses produksi prototipe atau model; </li>
 <li>Desain, konstruksi dan pengoperasian kegiatan percobaan proses produksi yang belum berjalan pada skala ekonomis yang menguntungkan untuk produksi komersial; </li>
 <li>Desain, konstruksi dan percobaan beberapa alternatif pilihan, untuk bahan, peralatan, produk, proses, sistem atau pelayanan yang sifatnya baru atau sedang dikembangkan. </li>
@@ -141,48 +154,46 @@
 25. Jika pemerintah tidak dapat membedakan tahap penelitian/riset dengan tahap pengembangan atas aktivitas/kegiatan internal untuk menghasilkan ATB, pemerintah harus memperlakukan seluruh pengeluaran atas aktivitas/kegiatan tersebut sebagai pengeluaran dalam tahap penelitian/riset. Biaya Pengembangan Situs Web 
 
 26. Biaya untuk pengembangan situs web dapat diakui sebagai ATB apabila: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>dikembangkan melalui kontrak dengan pihak ketiga; atau </li>
 <li>dalam hal dikembangkan sendiri, memenuhi persyaratan pengakuan pengembangan sebagaimana disyaratkan pada Paragraf </li>
 </ol>
 
-21. Pengakuan Khusus Terhadap Perangkat Lunak (Software) Komputer 
+21. Pengakuan Khusus Terhadap Perangkat Lunak (_software_) Komputer 
 
-27. Perangkat lunak (software) komputer dapat diperoleh melalui perolehan internal, maupun melalui perolehan eksternal. Perolehan Perangkat lunak (software) Komputer secara Internal 
+27. Perangkat lunak (_software_) komputer dapat diperoleh melalui perolehan internal, maupun melalui perolehan eksternal. Perolehan Perangkat lunak (_software_) Komputer secara Internal 
 
-28. Perangkat lunak (software) yang dibangun/dikembangkan sendiri oleh instansi pemerintah tidak diakui sebagai ATB. 
+28. Perangkat lunak (_software_) yang dibangun/dikembangkan sendiri oleh instansi pemerintah tidak diakui sebagai ATB. 
 
-29. Perangkat lunak (software) yang dibangun/dikembangkan sendiri oleh instansi pemerintah tidak diakui sebagai ATB karena permasalahan: 
-<ol class="custom-list">
+29. Perangkat lunak (_software_) yang dibangun/dikembangkan sendiri oleh instansi pemerintah tidak diakui sebagai ATB karena permasalahan: 
+<ol className="custom-list">
 <li>kesulitan untuk mengidentifikasi apakah kegiatan pengembangan aset tersebut terpisah dari satu kesatuan kegiatan suatu instansi pemerintah; </li>
 <li>kesulitan untuk mengidentifikasi apakah dan kapan aset tersebut menghasilkan manfaat ekonomi dan sosial masa depan; </li>
 <li>kesulitan untuk menentukan biaya perolehan aset secara andal; dan </li>
-<li>perangkat lunak (software) seperti ini biasanya bersifat terbuka dan tidak ada perlindungan hukum dan dapat dipergunakan siapa saja, sehingga salah satu kriteria dari pengakuan ATB yaitu pengendalian atas suatu aset menjadi tidak terpenuhi. Perolehan Perangkat lunak (software) Komputer secara Eksternal </li>
+<li>perangkat lunak (_software_) seperti ini biasanya bersifat terbuka dan tidak ada perlindungan hukum dan dapat dipergunakan siapa saja, sehingga salah satu kriteria dari pengakuan ATB yaitu pengendalian atas suatu aset menjadi tidak terpenuhi. Perolehan Perangkat lunak (_software_) Komputer secara Eksternal </li>
 </ol>
 
-30. Perolehan perangkat lunak (software) komputer secara eksternal dapat melalui pembelian, hibah, maupun tukar menukar. Perolehan secara pembelian dapat melalui kontrak pengembangan dengan pihak ketiga maupun pembelian secara langsung. 
+30. Perolehan perangkat lunak (_software_) komputer secara eksternal dapat melalui pembelian, hibah, maupun tukar menukar. Perolehan secara pembelian dapat melalui kontrak pengembangan dengan pihak ketiga maupun pembelian secara langsung. 
 
-31. Perangkat lunak (software) komputer yang dibangun/dikembangkan melalui kontrak dengan pihak ketiga diakui sebagai ATB sebesar nilai kontraknya. 
+31. Perangkat lunak (_software_) komputer yang dibangun/dikembangkan melalui kontrak dengan pihak ketiga diakui sebagai ATB sebesar nilai kontraknya. 
 
-32. Perangkat lunak (software) komputer yang dibeli untuk digunakan sendiri namun merupakan bagian integral dari suatu hardware tanpa perangkat lunak (software) tersebut, hardware tidak dapat dioperasikan), maka perangkat lunak (software) tersebut diakui sebagai bagian harga perolehan hardware dan dikapitalisasi sebagai peralatan dan mesin. 
+32. Perangkat lunak (_software_) komputer yang dibeli untuk digunakan sendiri namun merupakan bagian integral dari suatu _hardware_ tanpa perangkat lunak (_software_) tersebut, _hardware_ tidak dapat dioperasikan), maka perangkat lunak (_software_) tersebut diakui sebagai bagian harga perolehan _hardware_ dan dikapitalisasi sebagai peralatan dan mesin. 
 
-33. Perangkat lunak (software) komputer yang dibeli untuk digunakan sendiri dan tidak terkait dengan hardware dikapitalisasi sebagai ATB setelah memenuhi kriteria perolehan aset secara umum. 
+33. Perangkat lunak (_software_) komputer yang dibeli untuk digunakan sendiri dan tidak terkait dengan _hardware_ dikapitalisasi sebagai ATB setelah memenuhi kriteria perolehan aset secara umum. 
 
-34. Perangkat lunak (software) komputer yang dibeli dan dimaksudkan untuk dijual atau diserahkan kepada pihak ketiga, maka perangkat lunak (software) tersebut dicatat sebagai persediaan. 
+34. Perangkat lunak (_software_) komputer yang dibeli dan dimaksudkan untuk dijual atau diserahkan kepada pihak ketiga, maka perangkat lunak (_software_) tersebut dicatat sebagai persediaan. 
 
-35. Perolehan perangkat lunak (software) yang memiliki izin penggunaan/masa manfaat lebih dari 12 bulan, maka nilai perolehan perangkat lunak (software) dan biaya lisensinya harus dikapitalisasi sebagai ATB. Sedangkan perolehan perangkat lunak (software) yang memiliki izin penggunaan/masa manfaat kurang dari atau sampai dengan 12 bulan, maka nilai perolehan perangkat lunak (software) tidak dikapitalisasi. 
+35. Perolehan perangkat lunak (_software_) yang memiliki izin penggunaan/masa manfaat lebih dari 12 bulan, maka nilai perolehan perangkat lunak (_software_) dan biaya lisensinya harus dikapitalisasi sebagai ATB. Sedangkan perolehan perangkat lunak (_software_) yang memiliki izin penggunaan/masa manfaat kurang dari atau sampai dengan 12 bulan, maka nilai perolehan perangkat lunak (_software_) tidak dikapitalisasi. 
 
-36. Perangkat lunak (software) yang diperoleh hanya dengan membayar ijin penggunaan/lisensi dengan masa manfaat lebih dari 12 bulan harus dikapitalisasi sebagai ATB. Perangkat lunak (software) yang diperoleh hanya dengan membayar izin penggunaan/lisensi kurang dari atau sampai dengan 12 bulan, tidak dikapitalisasi. 
+36. Perangkat lunak (_software_) yang diperoleh hanya dengan membayar ijin penggunaan/lisensi dengan masa manfaat lebih dari 12 bulan harus dikapitalisasi sebagai ATB. Perangkat lunak (_software_) yang diperoleh hanya dengan membayar izin penggunaan/lisensi kurang dari atau sampai dengan 12 bulan, tidak dikapitalisasi. 
 
-37. Perangkat lunak (software) yang tidak memiliki pembatasan izin penggunaan dan masa manfaatnya lebih dari 12 bulan harus dikapitalisasi. Perangkat lunak (software) yang tidak memiliki pembatasan izin penggunaan dan masa manfaatnya kurang dari atau sampai dengan 12 bulan tidak dikapitalisasi. 
+37. Perangkat lunak (_software_) yang tidak memiliki pembatasan izin penggunaan dan masa manfaatnya lebih dari 12 bulan harus dikapitalisasi. Perangkat lunak (_software_) yang tidak memiliki pembatasan izin penggunaan dan masa manfaatnya kurang dari atau sampai dengan 12 bulan tidak dikapitalisasi. 
 
-38. Pengeluaran terkait perangkat lunak (software) yang tidak memenuhi kriteria kapitalisasi diakui sebagai beban pada saat terjadinya.
+38. Pengeluaran terkait perangkat lunak (_software_) yang tidak memenuhi kriteria kapitalisasi diakui sebagai beban pada saat terjadinya.
 
 ## PENELITIAN DIBIAYAI INSTANSI LAIN 
 
-39. Pada praktik di pemerintahan terdapat dana penelitian yang dimiliki oleh suatu instansi tertentu namun dana ini dapat digunakan untuk membiayai penelitian yang dilakukan oleh perguruan tinggi atau lembaga-lembaga penelitian dan pengembangan. Sesuai dengan konsep belanja dalam pemerintahan dan konsep entitas, maka entitas yang memiliki anggaran adalah yang berhak mencatat aset apabila dari belanja yang dikeluarkan dari anggaran tersebut menghasilkan ATB walaupun penelitiannya dilakukan oleh lembaga lain. Namun demikian, instansi pemerintah yang memberikan dana tidak dapat serta merta mengakui ATB tersebut, kecuali jika memenuhi karakteristik ATB dan memenuhi kriteria pengakuan ATB.
-
-## ATB yang berasal dari penelitian dan pengembangan harus sesuai dengan kriteria pengakuan ATB dan memenuhi kondisi pengakuan untuk biaya pada tahap pengembangan, bukan biaya dalam tahap penelitian. 
+39. Pada praktik di pemerintahan terdapat dana penelitian yang dimiliki oleh suatu instansi tertentu namun dana ini dapat digunakan untuk membiayai penelitian yang dilakukan oleh perguruan tinggi atau lembaga-lembaga penelitian dan pengembangan. Sesuai dengan konsep belanja dalam pemerintahan dan konsep entitas, maka entitas yang memiliki anggaran adalah yang berhak mencatat aset apabila dari belanja yang dikeluarkan dari anggaran tersebut menghasilkan ATB walaupun penelitiannya dilakukan oleh lembaga lain. Namun demikian, instansi pemerintah yang memberikan dana tidak dapat serta merta mengakui ATB tersebut, kecuali jika memenuhi karakteristik ATB dan memenuhi kriteria pengakuan ATB.  ATB yang berasal dari penelitian dan pengembangan harus sesuai dengan kriteria pengakuan ATB dan memenuhi kondisi pengakuan untuk biaya pada tahap pengembangan, bukan biaya dalam tahap penelitian. 
 
 40. Biaya perolehan ATB yang dihasilkan secara internal dari pengembangan adalah sejumlah pengeluaran yang dilakukan sejak tanggal ATB pertama kali memenuhi kriteria pengakuan. Sehingga tidak semua biaya penelitian dan pengembangan yang telah dikeluarkan diakui sebagai ATB. Biaya penelitian dan biaya pengembangan terkait dengan ATB sebelum kriteria pengakuan dipenuhi tidak boleh diakui sebagai ATB.
 
@@ -192,18 +203,16 @@
 
 41. Pada saat perolehan, ATB dinilai dengan biaya perolehan. Apabila penilaian ATB dengan menggunakan biaya perolehan tidak dimungkinkan, maka nilai ATB berdasar pada nilai wajar pada saat perolehan. 
 
-42.
-
-## ATB yang diperoleh melalui pembelian dinilai berdasarkan biaya perolehan. Bila ATB diperoleh secara gabungan, harus dihitung nilai untuk masing-masing aset, yaitu dengan mengalokasikan harga gabungan tersebut berdasarkan perbandingan nilai wajar masing-masing aset yang bersangkutan. 
+42. ATB yang diperoleh melalui pembelian dinilai berdasarkan biaya perolehan. Bila ATB diperoleh secara gabungan, harus dihitung nilai untuk masing-masing aset, yaitu dengan mengalokasikan harga gabungan tersebut berdasarkan perbandingan nilai wajar masing-masing aset yang bersangkutan. 
 
 43. Biaya untuk memperoleh ATB dengan pembelian terdiri dari: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Harga beli, termasuk biaya import dan pajak-pajak, setelah dikurangi dengan potongan harga dan rabat; </li>
 <li>Setiap biaya yang dapat diatribusikan secara langsung dalam membawa aset tersebut ke kondisi yang dimaksudkan. </li>
 </ol>
 
 44. Contoh dari biaya yang dapat diatribusikan secara langsung adalah: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Biaya pelatihan staf yang timbul secara langsung agar aset tersebut dapat digunakan; </li>
 <li>Biaya pengujian untuk menjamin aset tersebut dapat berfungsi secara baik. </li>
 </ol>
@@ -216,29 +225,29 @@
 
 48. ATB yang diperoleh dari donasi/hibah harus dicatat sebesar nilai wajar pada saat perolehan. Penyerahan ATB tersebut akan sangat andal bila didukung dengan bukti perpindahan kepemilikannya secara hukum, seperti adanya akta hibah. 
 
-49.  ATB yang diperoleh dari pengembangan secara internal, misalnya hasil dari kegiatan pengembangan yang memenuhi syarat pengakuan, nilai perolehannya diakui sebesar biaya perolehan yang meliputi biaya yang dikeluarkan sejak ditetapkannya ATB tersebut memiliki masa manfaat di masa depan sampai dengan ATB tersebut telah selesai dikembangkan. 
+49. ATB yang diperoleh dari pengembangan secara internal, misalnya hasil dari kegiatan pengembangan yang memenuhi syarat pengakuan, nilai perolehannya diakui sebesar biaya perolehan yang meliputi biaya yang dikeluarkan sejak ditetapkannya ATB tersebut memiliki masa manfaat di masa depan sampai dengan ATB tersebut telah selesai dikembangkan. 
 
 50. Pengeluaran atas unsur ATB yang awalnya telah diakui oleh entitas sebagai beban pada suatu periode tidak diakui sebagai bagian dari harga perolehan ATB periode berikutnya. 
 
-51.  ATB yang dihasilkan dari pengembangan perangkat lunak (software) komputer yang memerlukan tiga tahap sebagaimana dimaksud dalam Paragraf 33, maka tahap yang dapat dilakukan kapitalisasi adalah tahap pengembangan aplikasi, bila telah memenuhi kriteria dimaksud dikapitalisasi dan dinilai sebesar pengeluarannya. 
+51. ATB yang dihasilkan dari pengembangan perangkat lunak (_software_) komputer yang memerlukan tiga tahap sebagaimana dimaksud dalam Paragraf 33, maka tahap yang dapat dilakukan kapitalisasi adalah tahap pengembangan aplikasi, bila telah memenuhi kriteria dimaksud dikapitalisasi dan dinilai sebesar pengeluarannya. 
 
-52.  ATB yang berasal dari aset bersejarah (heritage assets) tidak diharuskan untuk disajikan di neraca namun aset tersebut harus diungkapkan dalam Catatan atas Laporan Keuangan. Namun, apabila ATB bersejarah tersebut didaftarkan untuk memperoleh hak paten maka hak patennya dicatat di neraca sebesar nilai pendaftarannya. Aset Tak Berwujud Dalam Pengerjaan 
+52. ATB yang berasal dari aset bersejarah (_heritage assets_) tidak diharuskan untuk disajikan di neraca namun aset tersebut harus diungkapkan dalam Catatan atas Laporan Keuangan. Namun, apabila ATB bersejarah tersebut didaftarkan untuk memperoleh hak paten maka hak patennya dicatat di neraca sebesar nilai pendaftarannya. Aset Tak Berwujud Dalam Pengerjaan 
 
 53. Jika penyelesaian pengerjaan suatu ATB melebihi dan/atau melewati satu periode tahun anggaran, maka ATB yang belum selesai tersebut digolongkan dan dilaporkan sebagai ATB dalam pengerjaan sampai dengan aset tersebut selesai dan siap dipakai. 
 
-54. Terdapat kemungkinan pengembangan suatu ATB yang diperoleh secara internal yang jangka waktu penyelesaiannya melebihi satu tahun anggaran atau pelaksanaan pengembangannya melewati tanggal pelaporan. Dalam hal terjadi seperti ini, maka atas pengeluaran yang telah terjadi dalam rangka pengembangan tersebut sampai dengan tanggal pelaporan harus diakui sebagai ATB dalam pengerjaan (Intangible Asset-Work In Progress), dan setelah pekerjaan selesai kemudian akan direklasifikasi menjadi ATB yang bersangkutan. Pengukuran Setelah Perolehan 
+54. Terdapat kemungkinan pengembangan suatu ATB yang diperoleh secara internal yang jangka waktu penyelesaiannya melebihi satu tahun anggaran atau pelaksanaan pengembangannya melewati tanggal pelaporan. Dalam hal terjadi seperti ini, maka atas pengeluaran yang telah terjadi dalam rangka pengembangan tersebut sampai dengan tanggal pelaporan harus diakui sebagai ATB dalam pengerjaan (_Intangible Asset-Work In Progress_), dan setelah pekerjaan selesai kemudian akan direklasifikasi menjadi ATB yang bersangkutan. Pengukuran Setelah Perolehan 
 
 55. Pada kebanyakan kasus, sifat alamiah ATB adalah tidak adanya penambahan nilai ATB dan tidak diperlukannya penggantian dari bagian ATB dimaksud setelah perolehan awal. Oleh karena itu, kebanyakan pengeluaran setelah perolehan ATB mungkin dimaksudkan untuk memelihara manfaat ekonomi di masa depan atau jasa potensial yang terkandung dalam ATB dimaksud dan pengeluaran tersebut bukan merupakan upaya untuk memenuhi definisi dan kriteria pengakuan ATB. Dengan kata lain, seringkali sulit untuk mengatribusikan secara langsung pengeluaran setelah perolehan terhadap suatu ATB tertentu sehingga diperlakukan sebagai beban operasional suatu entitas. Namun demikian, apabila memang terdapat pengeluaran setelah perolehan yang dapat diatribusikan langsung terhadap ATB tertentu, maka pengeluaran tersebut dapat dikapitalisasi ke dalam nilai ATB dimaksud. 
 
 56. Pengeluaran setelah perolehan ATB dapat dikapitalisasi apabila memenuhi salah satu kriteria ini: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Manambah sisa umur manfaat ekonomis selanjutnya; atau </li>
 <li>Meningkatkan nilai guna dalam bentuk peningkatan kapasitas, efektivitas, efisiensi. </li>
 </ol>
 
-1.  Apabila perubahan yang dilakukan tidak memenuhi salah satu kriteria di atas maka pengeluaran diakui sebagai beban pada saat terjadinya. Sebagai contoh, pengeluaran setelah perolehan perangkat lunak (software) yang sifatnya hanya mengembalikan ke kondisi semula seperti pengeluaran untuk teknisi perangkat lunak (software) dalam rangka memperbaiki untuk dapat dioperasikan kembali, tidak perlu dikapitalisasi. 
+57.  Apabila perubahan yang dilakukan tidak memenuhi salah satu kriteria di atas maka pengeluaran diakui sebagai beban pada saat terjadinya. Sebagai contoh, pengeluaran setelah perolehan perangkat lunak (_software_) yang sifatnya hanya mengembalikan ke kondisi semula seperti pengeluaran untuk teknisi perangkat lunak (_software_) dalam rangka memperbaiki untuk dapat dioperasikan kembali, tidak perlu dikapitalisasi. 
 
-2.  Pengeluaran setelah perolehan berupa perpanjangan izin penggunaan/lisensi yang kurang dari atau sampai dengan 12 bulan tidak dikapitalisasi, sedangkan pengeluaran setelah perolehan berupa perpanjangan izin penggunaan/lisensi yang lebih dari 12 bulan dikapitalisasi. Amortisasi 
+58.  Pengeluaran setelah perolehan berupa perpanjangan izin penggunaan/lisensi yang kurang dari atau sampai dengan 12 bulan tidak dikapitalisasi, sedangkan pengeluaran setelah perolehan berupa perpanjangan izin penggunaan/lisensi yang lebih dari 12 bulan dikapitalisasi. Amortisasi 
 
 59. ATB disajikan sebesar nilai tercatatnya yaitu biaya perolehan ATB tersebut dikurangi akumulasi amortisasi. 
 
@@ -277,7 +286,7 @@
 ## PENGUNGKAPAN 
 
 75. Laporan keuangan mengungkapkan hal-hal sebagai berikut terkait dengan ATB, antara lain: 
-<ol class="custom-list">
+<ol className="custom-list">
 <li>Rincian masing-masing pos ATB yang signifikan; </li>
 <li>ATB yang memiliki masa manfaat tak terbatas atau terbatas, jika masa manfaat terbatas diungkapkan tingkat amortisasi yang digunakan atau masa manfaatnya. </li>
 <li>Masa manfaat atau tingkat amortisasi yang digunakan; </li>
