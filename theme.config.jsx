@@ -3,7 +3,7 @@ export default {
     project: {
       link: 'https://github.com/maziyank/psap-indo'
     },
-    docsRepositoryBase: 'https://github.com/maziyank/psap-indo/blob/main/docs/pages',
+    docsRepositoryBase: 'https://github.com/maziyank/psap-indo/blob/main',
     logo: (
       <>
         <svg width="24" height="24" viewBox="0 0 24 24">
